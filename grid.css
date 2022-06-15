@@ -18,16 +18,16 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-.links {
-  text-align: center;
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #9cfd01;
   padding: 15px;
 }
-.links a, p {
+
+nav a {
   text-decoration: none;
-  color: white;
-}
-.links button {
-  background: red;
+  color: beige;
 }
 main {
   width: 50%;
