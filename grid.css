@@ -1,58 +1,65 @@
-/* Box Model Hack */
 * {
   box-sizing: border-box;
 }
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
   background: #1a1c28;
-   display: flex;
-  align-items:center ;
+  margin: 0;
+  padding: 0;
+  display: flex;
   justify-content: center;
-  height: 100vh; 
-   
+  align-items: center;
+  height: 100vh;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+.links {
+  text-align: center;
+  padding: 15px;
+}
+.links a, p {
+  text-decoration: none;
+  color: white;
+}
+.links button {
+  background: red;
+}
 main {
+  width: 50%;
   display: grid;
   grid-template-areas:
     "a a a b b"
-    "c  c d  d d"
+    "c c d d d"
     "c c e e e";
-  gap: 10px;
-  width: 50%;
-  /* margin:0 auto; */
-  
+    gap: 10px;
 }
-
 
 .A {
   background: #eb5020;
   grid-area: a;
-   height: 200px;
+  height: 200px;
 }
 .B {
   background: #fca201;
   grid-area: b;
- 
 }
 .C {
   background: #05aa42;
   grid-area: c;
-  height: 200px;
+  height: 250px;
 }
 .D {
   background: #01aefd;
   grid-area: d;
+  
 }
 .E {
-  background:#01aefd;
+  background: #01aefd;
   grid-area: e;
 }
 
